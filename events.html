@@ -9,34 +9,15 @@
 </head>
 <body>
     <!--    Top Sticky Bar    -->
-    <div style="padding-left:5px;padding-top:15px;padding-bottom:15px;background-color: rgb(0, 20, 20);" class="sticky">
-        <a href="index.html" class="coolbutton">Home</a>
-        <a href="events.html" class="coolbutton">Events</a>
-        <a href="resources.html" class="coolbutton">Resources</a>
-        <a href="robots.html" class="coolbutton">Robots</a>
-        <a href="Sponsors.html" class="coolbutton">Sponsors</a>
-        <a href="what.html" class="coolbutton">???</a>
-    </div>
+    <div hx-trigger="load" hx-get="navbar.html" hx-swap="innerHTML">Navbar loading...</div>
 
     <!--    Most Text     -->
-    <br><br><br><br><br><br><br>
-    <h1 class="text-center" style="font-size: 65px;">Upcoming events?</h1>
-    <br><br><br><br><br><br><br><br>
+    <h1 class="text-center big-title">Upcoming events?</h1>
     <h1 class="text-center">We have no events</h1>
 
 
     <!--   Bottom Section. Contains some links    -->
-    <div style="padding-left:10px;padding-top: 10px;padding-bottom:10px;background-color: rgb(255, 255, 255);">
-    <img style='width:40px'src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT32NWlNmm51_JKYUZkM73K2UdP-Jq8KOIG8w&s"><br>
-    </div>
-    <div style="padding-left:10px;padding-top: 10px;padding-bottom:10px;background-color: rgb(111, 111, 111);">
-    <br>
-    <p style="color: white;">Important links:</p>
-    <a href="https://github.com/FRC3407" style="color: white;">Github</a><p></p>
-    <a href="https://www.thebluealliance.com/team/3407" style="color: white;">Blue Alliance</a>
-    <br>
-    <br>
-    </div>
+    <div hx-trigger="load" hx-get="footer.html" hx-swap="innerHTML">Footer loading...</div>
 
 </body>
 </html>
