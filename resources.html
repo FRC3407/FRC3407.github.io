@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FRC Team 3407</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        //<iframe class="text-center" width="400" height="300" src="https://www.youtube.com/embed/9keeDyFxzY4?si=S2oh03VRIvvNlbfs" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-    </script>
+
+    <script src="https://unpkg.com/htmx.org@2.0.3"></script>
 </head>
+
 <body>
     <!--    Top Sticky Bar    -->
-    <div style="padding-left:5px;padding-top:15px;padding-bottom:15px;background-color: rgb(0, 20, 20);" class="sticky">
-        <a href="index.html" class="coolbutton">Home</a>
-        <a href="events.html" class="coolbutton">Events</a>
-        <a href="resources.html" class="coolbutton">Resources</a>
-        <a href="robots.html" class="coolbutton">Robots</a>
-        <a href="Sponsors.html" class="coolbutton">Sponsors</a>
-        <a href="what.html" class="coolbutton">???</a>
-    </div>
+    <div hx-trigger="load" hx-get="navbar.html" hx-swap="innerHTML">Navbar loading...</div>
 
     <!--    Most Text     -->
-    <br><br><br><br><br><br><br>
-    <h1 class="text-center" style="font-size: 65px;">Student Resources</h1>
-    <br><br><br><br><br><br><br><br>
-    <h1 class="text-center">Our resources have been completely depleted</h1>
+    <h1 class="text-center big-title">Student Resources</h1>
 
+    <h2>FIRST Information</h2>
+    <a href="https://www.firstinspires.org/robotics/frc/game-and-season">FIRST Website</a>
+    <h2>2024 FIRST Competition: Crescendo</h2>
+    <p><b>TODO: put stuff here</b></p>
+    <h2>Past competitions</h2>
+    <a href="https://www.youtube.com/watch?v=I77Dz9pfds4">FRC 2021: Infinite Recharge</a>
+    <br>
+    <a href="https://youtu.be/EVC_h4hHwZA">FRC 2019: Einstein Final 1</a>
+    <br>
+    <a href="https://youtu.be/drL2y0rYo3I">FRC 2019: Einstein Final 2</a>
+    <img src="imgs/horse.jpg" alt="horse">
 
     <!--   Bottom Section. Contains some links    -->
-    <div style="padding-left:10px;padding-top: 10px;padding-bottom:10px;background-color: rgb(255, 255, 255);">
-    <img style='width:40px'src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT32NWlNmm51_JKYUZkM73K2UdP-Jq8KOIG8w&s"><br>
-    </div>
-    <div style="padding-left:10px;padding-top: 10px;padding-bottom:10px;background-color: rgb(111, 111, 111);">
-    <br>
-    <p style="color: white;">Important links:</p>
-    <a href="https://github.com/FRC3407" style="color: white;">Github</a><p></p>
-    <a href="https://www.thebluealliance.com/team/3407" style="color: white;">Blue Alliance</a>
-    <br>
-    <br>
-    </div>
+    <div hx-trigger="load" hx-get="footer.html" hx-swap="innerHTML">Footer loading...</div>
+    
 
 </body>
+
 </html>
