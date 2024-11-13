@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRC Team 3407</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+</head>
+<body>
+    <!--    Top Sticky Bar    -->
+    <div hx-trigger="load" hx-get="navbar.html" hx-swap="innerHTML">Navbar loading...</div>
+
+    <!--    Most Text     -->
+    <h1 class="text-center big-title">Calendar</h1>
+    
+    <main>
+        <div class="center">
+            <iframe src="https://calendar.google.com/calendar/embed?src=moundsviewrobotics%40gmail.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </main>
+
+
+    <!--   Bottom Section. Contains some links    -->
+    <div hx-trigger="load" hx-get="footer.html" hx-swap="innerHTML">Footer loading...</div>
+
+</body>
+</html>
+
