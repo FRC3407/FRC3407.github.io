@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRC Team 3407</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+</head>
+<body>
+    <!--    Top Sticky Bar    -->
+    <div hx-trigger="load" hx-get="navbar.html" hx-swap="innerHTML">Navbar loading...</div>
+
+    <!--    Most Text     -->
+    <h1 class="text-center big-title">Sponsors</h1>
+    
+    <main>
+        <div class="sponsor">
+            <img src="/imgs/3m.png" alt="3M">
+            <p>3M</p>
+        </div>
+        <div class="sponsor">
+            <img src="/imgs/Pentair.png" alt="Pentair">
+            <p>Pentair</p>
+        </div>
+        <div class="sponsor">
+            <img src="/imgs/AndersonPower.png" alt="Anderson Power">
+            <p>Anderson Power</p>
+        </div>
+        <div class="sponsor">
+            <img src="/imgs/Solidworks.png" alt="Solid Works">
+            <p>Solid Works</p>
+        </div>
+        <div class="sponsor">
+            <img src="/imgs/FirstRobotics.png" alt="First">
+            <p>First</p>
+        </div>
+        <div class="sponsor">
+            <img src="/imgs/GeneHaas.png" alt="Gene Haas">
+            <p>Gene Haas</p>
+        </div>
+        <div class="sponsor">
+            <img src="/imgs/horse.jpg" alt="Mounds View">
+            <p>Mounds View</p>
+        </div>
+    </main>
+
+
+    <!--   Bottom Section. Contains some links    -->
+    <div hx-trigger="load" hx-get="footer.html" hx-swap="innerHTML">Footer loading...</div>
+
+</body>
+</html>
